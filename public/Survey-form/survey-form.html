@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to fill out the form</p>
+    <form action="" id="survey-form">
+
+        <fieldset class="border-top">
+            <label for="name" id="name-label">Name <input type="text" id="name" placeholder="Enter your name" class="above"
+                    required></label>
+            <label for="email" id="email-label">Email <input type="email" id="email" placeholder="Enter your email" class="above"
+                    required></label>
+            <label for="age" id="number-label">Age <input type="number" id="number" min="13" max="100" class="above"
+                    placeholder="Age"></label>
+            <label for="role">Select your role 
+                <select name="role" id="dropdown" class="above">
+                    <option value="0">Select your role</option>
+                    <option value="1">Fighter</option>
+                    <option value="2">Tank</option>
+                    <option value="3">Mage</option>
+                </select>
+            </label>
+
+        </fieldset>
+        
+        <fieldset>
+            <legend>Select your gender</legend>
+            <label for="male"><input type="radio" name="gender-type" id="male" class="inline" value="male"/>Male </label>
+            <label for="female"><input type="radio" name="gender-type" id="female" class="inline" value="female"/>female </label>            
+        </fieldset>
+
+        <fieldset>
+            <legend>Choose your interest</legend>
+            <label for="interest">Music <input type="checkbox" value="music" class="inline"></label>
+            <label for="interest">Sport <input type="checkbox" value="sport" class="inline"></label>
+            <label for="interest">Coding <input type="checkbox" value="coding" class="inline"></label>
+            <label for="interest">Food <input type="checkbox" value="food" class="inline"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Provide a bio</legend>
+            <textarea name="bio" id="bii" cols="30" rows="3" placeholder="Enter your bio here"></textarea>
+        </fieldset>
+
+        <input type="submit" value="submit" id="submit"/>
+    </form>
+</body>
+
+</html>

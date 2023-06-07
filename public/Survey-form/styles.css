@@ -1,0 +1,36 @@
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+
+}
+
+
+fieldset {
+  border: transparent;
+  border-top: 1px solid black;
+}
+
+.inline {
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+
+}
+
+.above {
+  width: 100%;
+}
+
+.border-top {
+  border-top: transparent;
+}
